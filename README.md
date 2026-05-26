@@ -4,6 +4,8 @@ The web UI for PurelyManage, a self-hosted admin panel for PurelyMail. Built wit
 
 The backend repo is at [purelymanageBackend-public](https://github.com/sagarnayak/purelymanageBackend-public). You need the backend running before the frontend is useful.
 
+**Blog series:** [How PurelyManage was built](https://blog.hardcodeconsulting.tech/post/purelymanage-intro/) - 11 posts covering the architecture, security model, DNS monitoring, IMAP migrations, and deployment.
+
 ## Prerequisites
 
 - Node.js 18 or later
