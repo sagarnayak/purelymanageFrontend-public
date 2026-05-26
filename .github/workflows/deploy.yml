@@ -1,9 +1,22 @@
 name: Deploy Frontend
 
+# Trigger is set to manual only so this workflow does not run automatically.
+# To enable auto-deploy on push to main, replace the 'on' block below with:
+#
+#   on:
+#     push:
+#       branches:
+#         - main
+#
+# You will also need to set these secrets in your GitHub repo settings:
+#   VITE_API_URL            - the URL of your PurelyManage backend
+#   S3_BUCKET               - your S3 bucket name
+#   AWS_ACCESS_KEY_ID       - AWS credentials with S3 write + CloudFront invalidation access
+#   AWS_SECRET_ACCESS_KEY   - AWS credentials
+#   CLOUDFRONT_DISTRIBUTION_ID - your CloudFront distribution ID
+
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   deploy:
